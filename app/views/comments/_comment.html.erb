@@ -9,8 +9,6 @@
 </p>
 
 <p>
-	<%= link_to 'Destroy Comment', [comment.article],
-		method :delete
-		data: { confirm: 'Are u sure?' } %>
+	<%= link_to 'Destroy Comment', [comment.article, comment], method: :delete, data: { confirm: 'Are u sure?' } %>
 </p>
 		
